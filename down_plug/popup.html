@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+        body{width:300px;padding:20px;}
+        a{text-decoration: none;}
+        a:hover{text-decoration:underline;}
+        #ToolBarBody{margin:-20px 0 20px 0;border-bottom:solid 1px #808080;padding:5px;}
+        #DownloadTaskBody .no_task{text-align:center;}
+        #DownloadTaskBody .task{margin:20px 0;}
+        #DownloadTaskBody .task .title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+        #DownloadTaskBody .task span.progress_text{float:left;display:block;}
+        #DownloadTaskBody .task a.retry{float:right;display:none;}
+        #DownloadTaskBody .task.error a.retry{display:block;}
+        #DownloadTaskBody .task .progress_body{border:solid 1px #808080;}
+        #DownloadTaskBody .task .progress_body .progress_value{background:#3069ef;width:0px;height:10px;}
+        #DownloadTaskBody .task.error .progress_body .progress_value{background:red;}
+        #DownloadTaskBody .task.complete .progress_body .progress_value{background:#08b021;}
+    </style>
+</head>
+<body>
+    <div id="ToolBarBody">
+        <div style="text-align:right;">
+            <a id="ClearTaskList" href="javascript:void(0);">清理任务</a>
+        </div>
+    </div>
+    <div id="DownloadTaskBody"></div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

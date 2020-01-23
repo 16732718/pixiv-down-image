@@ -1,0 +1,7 @@
+a.PixivAnimatDownloadLinkIcon{position:absolute;top:0;left:0;z-index:1;background-color:rgba(255,255,255,0.6);padding:5px;}
+button.PixivAnimatDownloadPage{line-height:32px;font-weight:700;}
+button.PixivAnimatDownloadPage span{margin-left:-5px}
+.icon{font-size:1.4em;line-height:100%;width:1em;height:1em;position:relative;display:block;float:left}
+.icon-download:after{content:"";position:absolute;left:-.375em;width:.75em;height:.125em;border-width:0 .125em .125em .125em;border-style:solid;border-color:#666;top:.75em}
+.icon-download:before{content:"";position:absolute;left:-.125em;width:0;height:0;border-width:.25em;border-style:solid;top:.5em;border-color:#666 transparent transparent transparent}
+.icon-download{position:absolute;left:.375em;width:.25em;height:.5em;background-color:#666;top:0}

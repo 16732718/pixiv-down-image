@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "jquery.min.js", "json5.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon128.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "jquery.min.js", "check.min.js", "loader.js" ],
+      "matches": [ "*://*.pixiv.net/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Pixiv动画图片下载工具扩展，需要配合PixivAnimatDownloader程序使用。 by magami",
+   "icons": {
+      "128": "icon128.png"
+   },
+   "permissions": [
+      "http://127.0.0.1:5000/api/",
+      "cookies"
+   ],
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoUSbUkYi58zj7H/wbfHqeRfD4w5f0nC6R7fEh0qW0b0trxwLCqCBTZtkisCh9T+vJ0cZLC0JvvRaYqLrqQIt2/fiN+ZgMRon+659gwDrsy1xJSRuCYhvRDiz9Sz02LYuwKVgVyi1vyJr8SB/NzniDi1TuneXjZ8q7lkY/RTvPivHlK/iP55JV5zRNySjcR2if+iIvmKUEfn2mRLSz8pdloU9gesdEKXdPWRKGD3ElKHOXH0Be9k0pEHmrKCXptuQ3ezqRTYOJm5I1uFn9mqHFrnDy1QstSY2o09DmVrsk8u0ICwjRNIGKbZp5tGOZjvOIa/HKb4aw2ooXZRMdCaR9wIDAQAB",
+   "manifest_version": 2,
+   "name": "Pixiv Animat Downloader Extension",
+   "permissions": [ "cookies", "webRequest", "webRequestBlocking", "*://127.0.0.1/*", "*://*.pixiv.net/*", "*://*.pximg.net/*", "*://pixiv-search.wifi169.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.11",
+   "web_accessible_resources": [ "loader.js", "loader.css", "jquery.min.js", "toastr.min.js", "toastr.min.css" ]
+}
